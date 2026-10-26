@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #312e81, #2563eb );
+}
+
+#root{
+    min-height: 100vh;
+}
+
+.btn{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 30px;
+}
+
+.btn h1{
+    font-size: 90px;
+    color: #67e8f9;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 25px 60px;
+    min-width: 220px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+
+}
+.btn button{
+    width: 240px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.btn button:nth-of-type(1){
+    background: #22c55e;
+    color: white;
+}
+.btn button:nth-of-type(2){
+    background: #ef4444;
+    color: white;
+}
+.btn button:nth-of-type(3){
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.btn button:hover{
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.btn button:active{
+    transform: scale(0.97);
+}
+
+@media(max-width: 480px){
+    .btn h1{
+        font-size: 70px;
+        padding: 20px 40px;
+    }
+    
+    .btn button{
+        width: 100%;
+        max-width: 280px;
+    }
+}
