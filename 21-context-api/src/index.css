@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.dark{
+  background-color: rgb(5, 70, 48);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.light{
+  background-color: rgb(16, 117, 78);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+.nav2{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
